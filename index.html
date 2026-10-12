@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robo School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <header class="header container">
+      <a href="#top" class="logo">ROBO.SCHOOL</a>
+
+      <nav class="nav">
+        <a href="#about" data-i18n="nav_about">О школе</a>
+        <a href="#trainers" data-i18n="nav_trainers">Тренеры</a>
+        <a href="#pricing" data-i18n="nav_price">Стоимость</a>
+      </nav>
+
+      <div class="header__right">
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang__btn" data-lang="ru">RU</button>
+          <button class="lang__btn" data-lang="kk">KK</button>
+          <button class="lang__btn" data-lang="en">EN</button>
+        </div>
+        <a href="tel:+78000001122" class="header__phone">+7 800 000 11 22</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="hero__inner container">
+      <div class="hero__text">
+        <h1 class="hero__title">ROBO SCHOOL</h1>
+        <p class="hero__sub" data-i18n="hero_sub">Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+        <a href="#form" class="btn btn--red" data-i18n="hero_btn">Записаться на курс</a>
+      </div>
+      <div class="hero__photo">
+        <div class="hero__ring"></div>
+        <img src="img/women1.png" alt="" class="hero__img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="menu" id="menu">
+    <button class="menu__close" id="menuClose" aria-label="Close">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path d="M2 2l14 14M16 2L2 16" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="menu__nav">
+      <a href="#about" data-i18n="nav_about">О школе</a>
+      <a href="#trainers" data-i18n="nav_trainers">Тренеры</a>
+      <a href="#pricing" data-i18n="nav_price">Стоимость</a>
+    </nav>
+    <div class="lang lang--menu">
+      <button class="lang__btn" data-lang="ru">RU</button>
+      <button class="lang__btn" data-lang="kk">KK</button>
+      <button class="lang__btn" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <p class="about__lead reveal" data-i18n-html="about_lead"><b>Robo School</b> — учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
+
+      <div class="stats">
+        <div class="stat reveal" style="--d:.05s">
+          <div class="stat__num" data-count="10">0</div>
+          <div class="stat__text" data-i18n="stat1">УМК по различным направлениям по робототехнике</div>
+        </div>
+        <div class="stat reveal" style="--d:.15s">
+          <div class="stat__num" data-count="20">0</div>
+          <div class="stat__text" data-i18n="stat2">Школ, в которых запущена робототехника</div>
+        </div>
+        <div class="stat reveal" style="--d:.25s">
+          <div class="stat__num" data-count="100">0</div>
+          <div class="stat__text" data-i18n="stat3">Педагогов прошедших курсы повышения квалификации</div>
+        </div>
+        <div class="stat reveal" style="--d:.35s">
+          <div class="stat__num" data-count="10000">0</div>
+          <div class="stat__text" data-i18n="stat4">Обученных детей на базе собственных центров</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT YOU GET ========== -->
+  <section class="get">
+    <div class="container">
+      <h2 class="title reveal" data-i18n="get_title">Что вы получите после курса</h2>
+      <div class="get__grid">
+        <div class="get__item reveal" style="--d:.05s">
+          <h3 data-i18n="get1_t">Удостоверение</h3>
+          <p data-i18n="get1_p">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+        </div>
+        <div class="get__item reveal" style="--d:.15s">
+          <h3 data-i18n="get2_t">Знания</h3>
+          <p data-i18n="get2_p">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+        </div>
+        <div class="get__item reveal" style="--d:.25s">
+          <h3>
+            <span data-i18n="get3_t">Практику</span>
+            <span class="info" id="info" tabindex="0" aria-label="info">
+              <svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="11" fill="#e4e4e7"/><rect x="10" y="9.5" width="2" height="6.5" rx="1" fill="#14122a"/><circle cx="11" cy="6.5" r="1.2" fill="#14122a"/></svg>
+              <span class="info__tip" data-i18n="tip">При наличии свободных мест</span>
+            </span>
+          </h3>
+          <p data-i18n="get3_p">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS ========== -->
+  <section class="trainers" id="trainers">
+    <div class="container">
+      <h2 class="title reveal" data-i18n="tr_title">Профессиональные тренеры</h2>
+    </div>
+
+    <div class="container trainers__wrap reveal">
+      <div class="carousel" id="carousel">
+        <article class="card" data-i="0">
+          <div class="card__img"><img src="img/trener5.png" alt="" draggable="false"></div>
+          <h3 class="card__name" data-i18n="n1">Ирина Лайм</h3>
+          <p class="card__role" data-i18n="role">преподаватель по робототехнике</p>
+          <button class="card__more" data-open="0" data-i18n="more">Подробнее</button>
+        </article>
+        <article class="card" data-i="1">
+          <div class="card__img"><img src="img/trener1.png" alt="" draggable="false"></div>
+          <h3 class="card__name" data-i18n="n2">Марина Орлова</h3>
+          <p class="card__role" data-i18n="role">преподаватель по робототехнике</p>
+          <button class="card__more" data-open="1" data-i18n="more">Подробнее</button>
+        </article>
+        <article class="card" data-i="2">
+          <div class="card__img"><img src="img/trener2.png" alt="" draggable="false"></div>
+          <h3 class="card__name" data-i18n="n3">Максим Петров</h3>
+          <p class="card__role" data-i18n="role">преподаватель по робототехнике</p>
+          <button class="card__more" data-open="2" data-i18n="more">Подробнее</button>
+        </article>
+        <article class="card" data-i="3">
+          <div class="card__img"><img src="img/trener3.png" alt="" draggable="false"></div>
+          <h3 class="card__name" data-i18n="n4">Константин Назаров</h3>
+          <p class="card__role" data-i18n="role">преподаватель по робототехнике</p>
+          <button class="card__more" data-open="3" data-i18n="more">Подробнее</button>
+        </article>
+        <article class="card" data-i="4">
+          <div class="card__img"><img src="img/treber4.png" alt="" draggable="false"></div>
+          <h3 class="card__name" data-i18n="n5">Анна Волкова</h3>
+          <p class="card__role" data-i18n="role">преподаватель по робототехнике</p>
+          <button class="card__more" data-open="4" data-i18n="more">Подробнее</button>
+        </article>
+      </div>
+
+      <div class="carousel__nav">
+        <div class="progress"><div class="progress__thumb" id="thumb"></div></div>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Prev">
+            <svg width="8" height="12" viewBox="0 0 8 12"><path d="M6.5 1L1.5 6l5 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="arrow" id="next" aria-label="Next">
+            <svg width="8" height="12" viewBox="0 0 8 12"><path d="M1.5 1l5 5-5 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="title title--center reveal" data-i18n="pk_title">Выберите нужный пакет</h2>
+      <div class="pricing__grid">
+        <div class="plan plan--dark reveal" style="--d:.05s">
+          <h3 class="plan__name">— PRO —</h3>
+          <div class="plan__price">20.000 ₽</div>
+          <p class="plan__text" data-i18n-html="pk_pro">УМК по робототехнике<br>и программированию</p>
+          <button class="btn btn--red btn--block" data-goto-form data-i18n="pk_btn">Оставить заявку</button>
+        </div>
+        <div class="plan reveal" style="--d:.15s">
+          <h3 class="plan__name">— ROBO —</h3>
+          <div class="plan__price">15.000 ₽</div>
+          <p class="plan__text" data-i18n="pk_robo">УМК по робототехнике</p>
+          <button class="btn btn--red btn--block" data-goto-form data-i18n="pk_btn">Оставить заявку</button>
+        </div>
+        <div class="plan reveal" style="--d:.25s">
+          <h3 class="plan__name">— PROG —</h3>
+          <div class="plan__price">10.000 ₽</div>
+          <p class="plan__text" data-i18n="pk_prog">УМК по программированию</p>
+          <button class="btn btn--red btn--block" data-goto-form data-i18n="pk_btn">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORM ========== -->
+  <section class="signup" id="form">
+    <div class="container signup__inner">
+      <div class="signup__text reveal">
+        <h2 data-i18n="form_title">Запишитесь на курс со скидкой 10%</h2>
+        <p data-i18n="form_sub">Акция действительна до 10 марта 2022 года</p>
+      </div>
+      <form class="form reveal" id="leadForm" novalidate style="--d:.1s">
+        <input type="text" name="name" id="fName" data-i18n-ph="ph_name" placeholder="Имя" required>
+        <input type="tel" name="phone" data-i18n-ph="ph_phone" placeholder="Телефон" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <button type="submit" class="btn btn--dark btn--block" data-i18n="form_btn">Оформить заявку</button>
+        <p class="form__ok" id="formOk" data-i18n="form_ok">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">ROBO.SCHOOL</div>
+      <a href="tel:+78000001122" class="footer__phone">+7 800 000 11 22</a>
+      <div class="footer__copy">© ROBO.SCHOOL</div>
+    </div>
+  </footer>
+
+  <!-- ========== TRAINER MODAL ========== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__card" role="dialog" aria-modal="true">
+      <button class="modal__close" id="modalClose" aria-label="Close">
+        <span class="modal__close-text" data-i18n="close">Закрыть</span>
+        <svg class="modal__close-x" width="14" height="14" viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13" stroke="#14122a" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="modal__head">
+        <img src="" alt="" class="modal__photo" id="mPhoto">
+        <div class="modal__info">
+          <h3 class="modal__name" id="mName"></h3>
+          <p class="modal__role" data-i18n="role">преподаватель по робототехнике</p>
+          <div class="socials">
+            <a href="#" class="social" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#14122a"/><path d="M10.8 15.5v-4.6h1.5l.25-1.8H10.8V8c0-.5.15-.85.9-.85h.95V5.55c-.17 0-.72-.07-1.38-.07-1.37 0-2.3.83-2.3 2.37v1.25H7.4v1.8h1.57v4.6z" fill="#fff"/></svg>
+            </a>
+            <a href="#" class="social" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="#14122a"/><rect x="5.6" y="5.6" width="8.8" height="8.8" rx="2.6" fill="none" stroke="#fff" stroke-width="1.2"/><circle cx="10" cy="10" r="2.1" fill="none" stroke="#fff" stroke-width="1.2"/><circle cx="12.4" cy="7.6" r=".6" fill="#fff"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop tabs -->
+      <div class="tabs" id="tabs"></div>
+
+      <!-- mobile dropdown -->
+      <div class="select" id="select">
+        <button class="select__btn" id="selectBtn"><span id="selectLabel"></span><i class="select__arrow"></i></button>
+        <div class="select__list" id="selectList"></div>
+      </div>
+
+      <div class="modal__body" id="mBody"></div>
+    </div>
+  </div>
+
+  <!-- ========== SCROLL TOP ========== -->
+  <button class="totop" id="totop" aria-label="Up">
+    <svg width="18" height="18" viewBox="0 0 18 18"><path d="M9 15V3M3.5 8.5L9 3l5.5 5.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
